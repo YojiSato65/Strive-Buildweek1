@@ -1,13 +1,95 @@
-!root {
-    --text-dark: rgb(255,255,255)
+:root {
+    --text-dark: rgb(200,200,200)
 }
 
 .artist-page-top {
-    height: 40vh;
+    min-height: 40vh;
     width: 100%;
+    background-image: url('queen3.jpeg');
     object-position: center;
     object-fit: cover;
+    position: relative;
+}
+.artist-page-top::before {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+.artist-page-top div:first-child div:first-child i {
+    color: white;
+    font-size: 1rem;
+}
+
+.artist-page-top button img {
+    width: 20px;
 }
 .artist-page-top div span {
     color: var(--text-dark);
+}
+.artist-page-top div:first-child button {
+    border-radius: 50px;
+    background-color: black;
+    border-color: black;
+} 
+.artist-page-top div:nth-child(2) {
+    z-index: 1;
+    color: white;
+}
+h1 {
+    font-size: 5rem;
+}
+.artist-page-top div:nth-child(2) svg {
+    color: #2C74D1;
+}
+.artist-page-top div:nth-child(2) div:nth-child(1) {
+    font-size: 0.8rem;
+}
+.artist-page-top div:nth-child(2) div:nth-child(3) {
+    font-size: 0.9rem;
+}
+.fa-circle-pause {
+    font-size: 3.5rem;
+    color: #1AB954;
+}
+.artist-page-bottom {
+    height: 50vh;
+    background: rgb(89,89,89);
+background: linear-gradient(180deg, rgba(89,89,89,1) 0%, rgba(40,40,40,1) 40%, rgba(0,0,0,1) 100%);
+}
+.artist-page-bottom h5 {
+    color: white;
+}
+.artist-page-bottom i + button {
+    border: 0.5px solid rgb(200,200,200);
+    background-color:rgb(0, 0, 0, 0);
+    height: 1.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.artist-page-bottom i + button + h6 {
+    color: var(--text-dark);
+}
+.artist-page-bottom td img {
+    height: 35px;
+}
+.artist-page-bottom-right img {
+    height: 60px;
+}
+#queen-icon {
+    width: 20px;
+    height: 20px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.artist-page-bottom-right div div div:nth-of-type(odd) {
+    color: var(--text-dark);
+    font-size: 0.7rem;
+}
+.artist-page-bottom-right div div div:nth-of-type(even) {
+    color: white;
 }
