@@ -15,119 +15,174 @@
 </head>
 
 <body>
-    <div class="container-fluid artist-page-top d-flex flex-column justify-content-between pl-4">
-        <div class="d-flex flex-row justify-content-between pt-3 px-2">
-            <div class="d-flex align-self-center">
-                <i class="fa-solid fa-angle-left"></i>
-                <i class="fa-solid fa-angle-right pl-4"></i>
+    <main class="d-flex">
+        <!-- left sidebar -->
+        <div class="container left-sidebar">
+            <div class="sidebar-top py-3">
+                <div>
+                    <img src="spotify-logo.jpeg" alt="spotify logo">
+                    <h3 class="d-inline-block">Spotify</h3>
+                </div>
             </div>
-            <div class="dropdown d-flex">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-expanded="false">
-                    <img src="account.icon.jpeg" alt="account icon" class="img-fluid">
-                    guest
-                </button>
+            <div class="sidebar-second-block">
+                <div class="slidebar-selected"><i class="fa-solid fa-house mr-2"></i>
+                    Home</div>
+                <div><i class="fa-solid fa-magnifying-glass mr-2"></i>
+                    Search</div>
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookshelf mr-2" viewBox="0 0 16 16">
+                        <path
+                            d="M2.5 0a.5.5 0 0 1 .5.5V2h10V.5a.5.5 0 0 1 1 0v15a.5.5 0 0 1-1 0V15H3v.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zM3 14h10v-3H3v3zm0-4h10V7H3v3zm0-4h10V3H3v3z" />
+                    </svg>
+                    Your Library
+                </div>
+            </div>
+            <div class="sidebar-third-block">
+                <div>
+                    <i class="fa-solid fa-square-plus mr-2"></i>Create Playlist
+                </div>
+                <div><i class="fa-regular fa-heart mr-2"></i>Liked Songs
+                </div>
+            </div>
+            <div class="sidebar-bottom">
+                <div>Funky Heavy Bluesy</div>
+                <div>Your Top Songs 2020</div>
+                <div>In Love With You - Erykah Badu</div>
+                <div>This Is Rod Stewart</div>
+                <div>FRANCHISE With Young Thug</div>
+                <div>Your Top Songs 2019</div>
+                <div>Pallegio</div>
+                <div>This Is Joe Bonamassa</div>
+                <div>Jun19</div>
+                <div>Jack 30th Party2</div>
+                <div>Jack 30th Party</div>
+                <div>This Is Opeth</div>
+                <div>Metal Ballads</div>
+                <div>New Playlist</div>
+                <div>Your Top Songs 2018</div>
+                <div>Jazz Classics Blue Note Edition</div>
+                <div>
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                    Install App
+                </div>
+            </div>
+        </div>
 
-                <!-- dropdown menu commenting out for now -->
-                <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <!-- main section -->
+        <div class="container-fluid artist-page-top d-flex flex-column justify-content-between">
+            <div class="d-flex flex-row justify-content-between pt-3 px-4">
+                <div class="d-flex align-self-center">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right pl-4"></i>
+                </div>
+                <div class="dropdown d-flex">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-expanded="false">
+                        <img src="account.icon.jpeg" alt="account icon" class="img-fluid">
+                        guest
+                    </button>
+
+                    <!-- dropdown menu commenting out for now -->
+                    <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div> -->
+                </div>
             </div>
-        </div>
-        <div class="">
-            <div class="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-patch-check-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
-                </svg>
-                verified artist
+            <div class="pl-4">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                    </svg>
+                    verified artist
+                </div>
+                <div class="">
+                    <h1 class="mb-0">Queen</h1>
+                </div>
+                <div class="pt-2 pb-4">
+                    27,311,222 monthly listeners
+                </div>
             </div>
-            <div class="">
-                <h1 class="mb-0">Queen</h1>
-            </div>
-            <div class="pt-2 pb-4">
-                27,311,222 monthly listeners
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid artist-page-bottom d-flex flex-column py-4 px-4">
-        <div class="d-flex align-items-center">
-            <i class="fa-solid fa-circle-pause align-self-center pr-4"></i>
-            <button type="button" class="btn btn-dark d-inline-block mr-4">FOLLOW</button>
-            <h6 class="d-inline-block align-self-center">. . .</h6>
-        </div>
-        <div class="row py-3">
-            <div class="col-9 artist-page-bottom-left">
-                <h5 class="pb-1">Popular</h5>
-                <table class="table table-dark mb-2">
-                    <tbody>
-                        <tr class="py-2">
-                            <th scope="row" class="py-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" />
-                                </svg></th>
-                            <td class="py-2"><img src="queen-album1.jpeg" alt="album1 image"></td>
-                            <td class="pl-0 py-2">Another One Bites The Dust - Remastered 2011</td>
-                            <td class="py-2">1,000,334,567</td>
-                            <td class="py-2">3:34</td>
-                        </tr>
-                        <tr class="py-2">
-                            <th scope="row" class="py-2">2</th>
-                            <td class="py-2"><img src="queen-album2.jpeg" alt="album2 image"></td>
-                            <td class="pl-0 py-2">Bohemian Rhapsody - Remastered 2011</td>
-                            <td class="py-2">1,496,334,567</td>
-                            <td class="py-2">5:54</td>
-                        </tr>
-                        <tr class="py-2">
-                            <th scope="row" class="py-2">3</th>
-                            <td class="py-2"><img src="queen-album3.jpeg" alt="album3 image"></td>
-                            <td class="pl-0 py-2">Don't Stop Me Now - Remastered 2011</td>
-                            <td class="py-2">1,430,334,567</td>
-                            <td class="py-2">3:29</td>
-                        </tr>
-                        <tr class="py-2">
-                            <th scope="row" class="py-2">4</th>
-                            <td class="py-2"><img src="queen-album4.jpeg" alt="album4 image"></td>
-                            <td class="pl-0 py-2">Under Pressure - Remastered 2011</td>
-                            <td class="py-2">900,334,242</td>
-                            <td class="py-2">4:08</td>
-                        </tr>
-                        <tr class="py-2">
-                            <th scope="row" class="py-2">5</th>
-                            <td class="py-2"><img src="queen-album5.jpeg" alt="album5 image"></td>
-                            <td class="pl-0 py-2">We Will Rock You - Remastered</td>
-                            <td class="py-2">9,000,334</td>
-                            <td class="py-2">3:34</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>SEE MORE</p>
-            </div>
-            <div class="col-3 artist-page-bottom-right">
-                <h5 class="pb-2">Artist pick</h5>
-                <div class="d-flex">
-                    <div class="d-flex pr-3">
-                        <img src="queen-album6.jpeg" alt="album6-image">
+            <div class="container-fluid artist-page-bottom d-flex flex-column py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-circle-pause align-self-center pr-4"></i>
+                    <button type="button" class="btn btn-dark d-inline-block mr-4">FOLLOW</button>
+                    <h6 class="d-inline-block align-self-center">. . .</h6>
+                </div>
+                <div class="row py-3">
+                    <div class="col-9 artist-page-bottom-left">
+                        <h5 class="pb-1">Popular</h5>
+                        <table class="table table-dark mb-2">
+                            <tbody>
+                                <tr class="py-2">
+                                    <th scope="row" class="py-1"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" />
+                                        </svg></th>
+                                    <td class="py-2"><img src="queen-album1.jpeg" alt="album1 image"></td>
+                                    <td class="pl-0 py-2">Another One Bites The Dust - Remastered 2011</td>
+                                    <td class="py-2">1,000,334,567</td>
+                                    <td class="py-2">3:34</td>
+                                </tr>
+                                <tr class="py-2">
+                                    <th scope="row" class="py-2">2</th>
+                                    <td class="py-2"><img src="queen-album2.jpeg" alt="album2 image"></td>
+                                    <td class="pl-0 py-2">Bohemian Rhapsody - Remastered 2011</td>
+                                    <td class="py-2">1,496,334,567</td>
+                                    <td class="py-2">5:54</td>
+                                </tr>
+                                <tr class="py-2">
+                                    <th scope="row" class="py-2">3</th>
+                                    <td class="py-2"><img src="queen-album3.jpeg" alt="album3 image"></td>
+                                    <td class="pl-0 py-2">Don't Stop Me Now - Remastered 2011</td>
+                                    <td class="py-2">1,430,334,567</td>
+                                    <td class="py-2">3:29</td>
+                                </tr>
+                                <tr class="py-2">
+                                    <th scope="row" class="py-2">4</th>
+                                    <td class="py-2"><img src="queen-album4.jpeg" alt="album4 image"></td>
+                                    <td class="pl-0 py-2">Under Pressure - Remastered 2011</td>
+                                    <td class="py-2">900,334,242</td>
+                                    <td class="py-2">4:08</td>
+                                </tr>
+                                <tr class="py-2">
+                                    <th scope="row" class="py-2">5</th>
+                                    <td class="py-2"><img src="queen-album5.jpeg" alt="album5 image"></td>
+                                    <td class="pl-0 py-2">We Will Rock You - Remastered</td>
+                                    <td class="py-2">9,000,334</td>
+                                    <td class="py-2">3:34</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>SEE MORE</p>
                     </div>
-                    <div class="d-flex flex-column">
-                        <div class="d-flex pb-1">
-                            <img id='queen-icon' src="queen-icon.jpeg" alt="queen icon image" class="pr-1">
-                            Posted By Queen
+                    <div class="col-3 artist-page-bottom-right">
+                        <h5 class="pb-2">Artist pick</h5>
+                        <div class="d-flex">
+                            <div class="d-flex pr-3">
+                                <img src="queen-album6.jpeg" alt="album6-image">
+                            </div>
+                            <div class="d-flex flex-column" id="veryright">
+                                <div class="d-flex pb-1">
+                                    <img id='queen-icon' src="queen-icon.jpeg" alt="queen icon image" class="pr-1">
+                                    Posted By Queen
+                                </div>
+                                <div class="d-flex">Queen Best Of</div>
+                                <div class="d-flex">Playlist</div>
+                            </div>
                         </div>
-                        <div class="d-flex">Queen Best Of</div>
-                        <div class="d-flex">Playlist</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+
+
+    </main>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

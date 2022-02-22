@@ -1,14 +1,57 @@
 :root {
     --text-dark: rgb(200,200,200)
 }
+
+/* Left sidebar - from here */
+.left-sidebar {
+    background-color: black;
+    width: 20vw;
+}
+.sidebar-top img {
+    width: 50px;
+}
+.sidebar-top h3 {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.left-sidebar div {
+    color: var(--text-dark);
+    font-size: 0.7rem;
+}
+.left-sidebar > div:not(.sidebar-top) {
+    padding: 0.5rem;
+}
+.left-sidebar > div:not(.sidebar-top) div {
+    padding: 0.4rem;
+}
+.sidebar-second-block, .sidebar-third-block {
+    font-weight: 600;
+}
+.left-sidebar i {
+    font-size: 1rem;
+}
+.sidebar-bottom i {
+    font-size: 0.9rem;
+}
+.sidebar-second-block .slidebar-selected {
+    background-color: #282828;
+    border-radius: 3px;
+    color: white;
+}
+/* Left sidebar - until here */
+
 /* Artist page - main section - from here */
 .artist-page-top {
-    min-height: 40vh;
+    min-height: 50vh;
     width: 100%;
     background-image: url('queen3.jpeg');
     object-position: center;
     object-fit: cover;
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
 }
 .artist-page-top::before {
     content: '';
@@ -41,6 +84,7 @@
 }
 h1 {
     font-size: 5rem;
+    font-weight: 700;
 }
 .artist-page-top div:nth-child(2) svg {
     color: #2C74D1;
@@ -61,13 +105,15 @@ h1 {
 .artist-page-bottom {
     height: 50vh;
     background: rgb(89,89,89);
-background: linear-gradient(180deg, rgba(89,89,89,1) 0%, rgba(40,40,40,1) 40%, rgba(0,0,0,1) 100%);
+background: linear-gradient(180deg, rgb(116, 116, 116) 0%, rgba(40,40,40,1) 40%, rgba(0,0,0,1) 100%);
 }
 .artist-page-bottom h5 {
     color: white;
 }
-.artist-page-bottom i + button {
+.artist-page-top .artist-page-bottom i + button {
     border: 0.5px solid rgb(200,200,200);
+    border-radius: 3px;
+    color: white;
     background-color:rgb(0, 0, 0, 0);
     height: 1.5rem;
     font-size: 0.7rem;
@@ -92,8 +138,13 @@ color: var(--text-dark);
     vertical-align: middle;
     padding-right: 0;
 }
-.artist-page-bottom-left tr:first-child th, .artist-page-bottom-left tr:first-child td:nth-of-type(2) {
+.artist-page-bottom-left tr:first-child th svg, .artist-page-bottom-left tr:first-child td:nth-of-type(2) {
     color: #1AB954;
+}
+.artist-page-bottom-left p {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-dark);
 }
 .artist-page-bottom-right img {
     height: 60px;
@@ -105,15 +156,13 @@ color: var(--text-dark);
     object-fit: cover;
     border-radius: 50px;
 }
-.artist-page-bottom-left p {
-    font-size: 0.7rem;
-    color: var(--text-dark);
-}
-.artist-page-bottom-right div div div:nth-of-type(odd) {
+#veryright div:nth-of-type(odd) {
     color: var(--text-dark);
     font-size: 0.7rem;
 }
-.artist-page-bottom-right div div div:nth-of-type(even) {
+#veryright div:nth-of-type(even) {
     color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
 }
 /* Artist page - main section - until here */
