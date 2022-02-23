@@ -35,6 +35,11 @@
 .sidebar-bottom i {
     font-size: 0.9rem;
 }
+.sidebar-bottom {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .sidebar-second-block .slidebar-selected {
     background-color: #282828;
     border-radius: 3px;
@@ -52,6 +57,7 @@
     position: relative;
     padding-left: 0;
     padding-right: 0;
+    background-size: 100%;
 }
 .artist-page-top::before {
     content: '';
@@ -101,6 +107,15 @@ h1 {
     color: #1AB954;
     position: relative;
 }
+.fa-pause {
+    font-size: 1.7rem;
+    color: white;
+    position: relative;
+    background-color: #1AB954;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
 
 .artist-page-bottom {
     height: 50vh;
@@ -109,6 +124,7 @@ background: linear-gradient(180deg, rgb(116, 116, 116) 0%, rgba(40,40,40,1) 40%,
 }
 .artist-page-bottom h5 {
     color: white;
+    font-weight: 700;
 }
 .artist-page-top .artist-page-bottom i + button {
     border: 0.5px solid rgb(200,200,200);
@@ -164,5 +180,24 @@ color: var(--text-dark);
     color: white;
     font-weight: 700;
     font-size: 0.8rem;
+}
+.artist-page-bottom-left th {
+    width: 3%;
+}
+.artist-page-bottom-left td:nth-child(2) {
+    width: 8%;
+}
+.artist-page-bottom-left td:nth-child(3) {
+    width: 31%;
+}
+.artist-page-bottom-left td:nth-child(4) {
+    width: 30%;
+    text-align: right;
+    color: var(--text-dark);
+}
+.artist-page-bottom-left td:nth-child(5) {
+    width: 30%;
+    text-align: right;
+    color: var(--text-dark);
 }
 /* Artist page - main section - until here */
