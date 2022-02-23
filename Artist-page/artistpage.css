@@ -4,7 +4,7 @@
 
 /* Left sidebar - from here */
 .left-sidebar {
-    background-color: black;
+    background-color: #171818;
     width: 20vw;
 }
 .sidebar-top img {
@@ -268,3 +268,90 @@ color: var(--text-dark);
     margin-bottom: 0;
 }
 /* Footer until here */
+
+/* Responsive */
+@media (max-width:576px) {
+    body h1 {
+        color: yellow !important;
+    }
+
+    .left-sidebar, .artist-page-bottom-right, .artist-page-bottom-left td:nth-child(5), .right-div, .heart-grid-icon, .number-play {
+        display: none !important;
+    }
+    .footer {
+        flex-direction: column;
+        height: 10vh;
+    }
+    .img-footer img {
+        height: 30px !important;
+    }
+
+}
+@media (min-width:577px) and (max-width:992px) {
+    body h1 {
+        color: tomato !important;
+    }
+    .artist-page-top {
+        /* min-height: 50vh; */
+        width: 100%;
+        background-image: url('queen3.jpeg');
+        object-position: center;
+        object-fit: cover;
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+        background-size: 150%;
+        background-position: 50% 0;
+    }
+    .artist-page-bottom {
+        height: 60vh;
+    }
+    .artist-page-bottom-left td:nth-child(2) {
+        width: 10%;
+    }
+    .sidebar-bottom {
+        white-space: wrap;
+        overflow: visible;
+        text-overflow: ellipsis;
+    }
+    #veryright {
+        flex-direction: row !important;
+    }
+    .left-sidebar > div:not(.sidebar-second-block), .right-div, .footer-icon1, .text-footer p {
+        display: none !important;
+    }
+    .sidebar-second-block {
+        margin-top: 2rem;
+    }
+    body {
+        position: relative;
+    }
+    .left-sidebar {
+        width: 30vw;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: space-evenly !important;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 24vw;
+        height: 35vh;
+    }
+    .left-div, .middle-div {
+        flex-direction: column;
+        width: 90%;
+    }
+    .footer-stop {
+        width: 22px;
+    }
+    .footer-play-bar {
+        width: 13vw;
+    }
+    .img-footer img {
+        height: 150px !important;
+    }
+    .text-footer {
+        text-align: center;
+    }
+}
