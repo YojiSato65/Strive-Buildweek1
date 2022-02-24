@@ -95,9 +95,11 @@ h1 {
     font-size: 5rem;
     font-weight: 700;
 }
-.artist-page-top div:nth-child(2) svg {
-    color: #2C74D1;
+.verified-icon {
+    width: 1.2rem;
+    vertical-align: middle;
 }
+
 .artist-page-top div:nth-child(2) div:nth-child(1) {
     font-size: 0.8rem;
 }
@@ -283,7 +285,7 @@ color: var(--text-dark);
     }
     .footer {
         flex-direction: column;
-        height: 10vh;
+        height: 100%;
     }
     .img-footer img {
         height: 30px !important;
@@ -306,9 +308,6 @@ color: var(--text-dark);
         background-size: 150%;
         background-position: 50% 0;
     }
-    .artist-page-bottom {
-        /* height: 60vh; */
-    }
     .artist-page-bottom-left td:nth-child(2) {
         width: 10%;
     }
@@ -316,9 +315,6 @@ color: var(--text-dark);
         white-space: wrap;
         overflow: visible;
         text-overflow: ellipsis;
-    }
-    #veryright {
-        flex-direction: row !important;
     }
     .left-sidebar > div:not(.sidebar-second-block), .right-div, .footer-icon1, .text-footer p {
         display: none !important;
@@ -335,10 +331,10 @@ color: var(--text-dark);
     .footer {
         flex-direction: column;
         justify-content: space-evenly !important;
-        position: sticky;
+        position: fixed;
         bottom: 0;
         left: 0;
-        width: 24vw;
+        width: 23.68vw;
         height: 35vh;
     }
     .left-div, .middle-div {
