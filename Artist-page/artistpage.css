@@ -353,4 +353,7 @@ color: var(--text-dark);
     .text-footer {
         text-align: center;
     }
+    .artist-pick {
+        width: 150px;
+    }
 }
