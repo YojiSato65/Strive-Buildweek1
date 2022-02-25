@@ -368,10 +368,3 @@ tr:hover {
 .text-success {
     opacity: 1;
 }
-#alert-follow {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 100px;
-    left: 0;
-}
