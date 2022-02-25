@@ -23,7 +23,7 @@
 
         .left-sidebar {
             background-color: black;
-            width: 20vw;
+            width: 15vw;
         }
 
         .sidebar-top img {
@@ -38,7 +38,7 @@
         }
 
         .left-sidebar div {
-            color: var(--text-dark);
+            pp color: var(--text-dark);
             font-size: 0.7rem;
         }
 
@@ -74,11 +74,29 @@
             font-weight: 700;
         }
 
-        .card1 h5.card-title {
-            color: azure;
-            opacity: 1;
+        .card-text,
+        .card-title {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            max-width: 120px;
+            min-width: 120px;
+
         }
 
+        .card1 h5.card-title {
+            color: azure;
+        }
+
+        .card {
+            transition: all .2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            background-color: #434444;
+            cursor: pointer;
+        }
 
         .container-fluid {
             background: rgb(0, 0, 0);
@@ -129,8 +147,8 @@
         }
 
         #img5 {
-            height: 100px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
             border-top-left-radius: 5%;
             border-bottom-right-radius: 5%;
             opacity: 1;
@@ -159,6 +177,11 @@
         .play {
             font-size: 2rem;
             color: aliceblue;
+        }
+
+        .play:hover {
+            color: darkgreen;
+            cursor: pointer;
         }
 
         .footer-play-bar {
@@ -205,7 +228,7 @@
 
             .footer {
                 flex-direction: column;
-                height: 10vh;
+                height: 100%;
             }
 
             .img-footer img {
@@ -257,17 +280,24 @@
             .footer {
                 flex-direction: column;
                 justify-content: space-evenly !important;
-                position: sticky;
+                position: fixed;
                 bottom: 0;
                 left: 0;
-                width: 24vw;
+                width: 23vw;
                 height: 35vh;
+            }
+
+            body {
+                background-color: #171818;
             }
 
             .left-div,
             .middle-div {
                 flex-direction: column;
                 width: 90%;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
             }
 
             .footer-stop {
@@ -279,7 +309,8 @@
             }
 
             .img-footer img {
-                height: 150px !important;
+                height: 100px !important;
+                margin: auto;
             }
 
             .text-footer {
@@ -344,7 +375,7 @@
         </div>
 
         <div class="container-fluid pl-5 pr-5">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between header">
                 <div class="icon"> <i class="fa-solid fa-circle-chevron-left mr-3 mt-3"></i><i
                         class="fa-solid fa-circle-chevron-right"></i></div>
                 <div class="drop mt-3">
@@ -361,154 +392,114 @@
             <h3 class="mt-5 mb-4">Good Morning</h3>
             <div class="row ">
                 <div class="col">
-                    <div class="card mb-3 card1">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./album-img/queen-album1.jpeg" alt="album1.jpg" id="img5">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                    <div class="card mb-3 card1 d-flex flex-row">
+                        <div class="d-inline">
+                            <img src="./album-img/queen-album1.jpeg" alt="album1.jpg" id="img5" />
+                        </div>
 
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Jazz-Rock</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-3 card1">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./album-img/queen-album2.jpeg" alt="album1.jpg" id="img5">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                    <div class="card mb-3 card1 d-flex flex-row">
+                        <div class="d-inline">
+                            <img src="./album-img/queen-album2.jpeg" alt="album1.jpg" id="img5" />
+                        </div>
 
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Songs</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-3 card1">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./album-img/queen-album3.jpeg" alt="album1.jpg" id="img5">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                    <div class="card mb-3 card1 d-flex flex-row">
+                        <div class="d-inline">
+                            <img src="./album-img/queen-album3.jpeg" alt="album1.jpg" id="img5" />
+                        </div>
 
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Metal Ballads</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-3 card1">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./album-img/queen-album4.jpeg" alt="album1.jpg" id="img5">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                    <div class="card mb-3 card1 d-flex flex-row">
+                        <div class="d-inline">
+                            <img src="./album-img/queen-album4.jpeg" alt="album1.jpg" id="img5" />
+                        </div>
 
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">POST HUMAN:</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-3 card1">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./album-img/queen-album5.jpeg" alt="album1.jpg" id="img5">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 id="card-title">Card title</h5>
+                    <div class="card mb-3 card1 d-flex flex-row">
+                        <div class="d-inline">
+                            <img src="./album-img/queen-album5.jpeg" alt="album1.jpg" id="img5" />
+                        </div>
 
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">This is Joe</h5>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card mb-3 card1">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./album-img/queen-album6.jpeg" alt="album1.jpg" id="img5">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                    <div class="card mb-3 card1 d-flex flex-row">
+                        <div class="d-inline">
+                            <img src="./album-img/queen-album6.jpeg" alt="album1.jpg" id="img5" />
+                        </div>
 
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Midian</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-3 card1">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./album-img/th (1).jpeg" alt="album1.jpg" id="img5">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                    <div class="card mb-3 card1 d-flex flex-row">
+                        <div class="d-inline">
+                            <img src="./album-img/th (1).jpeg" alt="album1.jpg" id="img5" />
+                        </div>
 
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Nymphetamine</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-3 card1">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./album-img/th (10).jpeg" alt="album1.jpg" id="img5">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                    <div class="card mb-3 card1 d-flex flex-row">
+                        <div class="d-inline">
+                            <img src="./album-img/th (11).jpeg" alt="album1.jpg" id="img5" />
+                        </div>
 
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">amo</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-3 card1">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./album-img/th (11).jpeg" alt="album1.jpg" id="img5">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                    <div class="card mb-3 card1 d-flex flex-row">
+                        <div class="d-inline">
+                            <img src="./album-img/th (10).jpeg" alt="album1.jpg" id="img5" />
+                        </div>
 
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">LEBASK</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-3 card1" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./album-img/th (12).jpeg" alt="album1.jpg" id="img5">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                    <div class="card mb-3 card1 d-flex flex-row">
+                        <div class="d-inline">
+                            <img src="./album-img/th (12).jpeg" alt="album1.jpg" id="img5" />
+                        </div>
 
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Opeth</h5>
                         </div>
                     </div>
                 </div>
@@ -527,8 +518,8 @@
                     <div class="card">
                         <img src="./album-img/th (13).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Burning Jazz</h5>
+                            <p class="card-text">You'll find flery,modern,groovy, jazz</p>
 
                         </div>
                     </div>
@@ -537,8 +528,8 @@
                     <div class="card">
                         <img src="./album-img/th (14).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Metal Ballads</h5>
+                            <p class="card-text">A collection of the best metal ballads.</p>
 
                         </div>
                     </div>
@@ -547,8 +538,8 @@
                     <div class="card">
                         <img src="./album-img/th (2).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Midian</h5>
+                            <p class="card-text">Cradle of Filfh</p>
 
                         </div>
                     </div>
@@ -557,8 +548,8 @@
                     <div class="card">
                         <img src="./album-img/th (3).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Liked Songs</h5>
+                            <p class="card-text">Your Favorits</p>
 
                         </div>
                     </div>
@@ -567,8 +558,8 @@
                     <div class="card">
                         <img src="./album-img/th (4).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">LE BASK</h5>
+                            <p class="card-text">Artist</p>
 
                         </div>
                     </div>
@@ -577,8 +568,8 @@
                     <div class="card">
                         <img src="./album-img/th (5).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">POST HUMAN</h5>
+                            <p class="card-text">Bring me the Horizon</p>
 
                         </div>
                     </div>
@@ -587,8 +578,8 @@
                     <div class="card">
                         <img src="./album-img/th (6).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">This is Joe </h5>
+                            <p class="card-text">This is Joe Bonamassa</p>
 
                         </div>
                     </div>
@@ -597,8 +588,8 @@
                     <div class="card">
                         <img src="./album-img/queen-album1.jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Queen</h5>
+                            <p class="card-text">Best of Queen</p>
 
                         </div>
                     </div>
@@ -620,8 +611,8 @@
                     <div class="card">
                         <img src="./album-img/th (13).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Podcast</h5>
+                            <p class="card-text">Best Podcast</p>
 
                         </div>
                     </div>
@@ -630,9 +621,8 @@
                     <div class="card">
                         <img src="./album-img/th (2).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Demoni Urbani</h5>
                             <p class="card-text">Little text</p>
-
                         </div>
                     </div>
                 </div>
@@ -640,8 +630,8 @@
                     <div class="card">
                         <img src="./album-img/th (5).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Daily Cogito</h5>
+                            <p class="card-text">Code</p>
 
                         </div>
                     </div>
@@ -650,8 +640,8 @@
                     <div class="card">
                         <img src="./album-img/th (7).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Ladies that UX</h5>
+                            <p class="card-text">UX/UI</p>
 
                         </div>
                     </div>
@@ -660,8 +650,8 @@
                     <div class="card">
                         <img src="./album-img/queen-album3.jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Mindfulness</h5>
+                            <p class="card-text">Spotify Studios</p>
 
                         </div>
                     </div>
@@ -670,8 +660,8 @@
                     <div class="card">
                         <img src="./album-img/th (14).jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Respondendo em voz alta</h5>
+                            <p class="card-text">Laurinha Lero</p>
 
                         </div>
                     </div>
@@ -680,8 +670,8 @@
                     <div class="card">
                         <img src="./album-img/album1.jpg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Little text</p>
+                            <h5 class="card-title">Widder</h5>
+                            <p class="card-text">Dein Tag</p>
 
                         </div>
                     </div>
@@ -690,7 +680,7 @@
                     <div class="card">
                         <img src="./album-img/queen-album3.jpeg" class="card-img-top" alt="album1.jpg">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">Power Pizza</h5>
                             <p class="card-text">Little text</p>
 
                         </div>
@@ -705,7 +695,7 @@
             <div class="text-footer mr-5 ">
                 <h6>Music Playing <br> Artist</h6>
             </div>
-            <div><i class="fa-solid fa-heart mr-3 footer-icon1"></i>
+            <div><i class="fa-solid fa-heart mr-3 footer-icon1" id="heart" onclick="likeButton(this)"></i>
                 <i class="fa-solid fa-table-cells-large footer-icon1"></i>
             </div>
         </div>
@@ -713,7 +703,7 @@
             <div class="d.flex icons align-items-center justify-content-center">
                 <i class="fa-solid fa-shuffle footer-icon1 mr-3"></i>
                 <i class="fa-solid fa-backward-step footer-icon2 mr-3"></i>
-                <i class="fa-solid fa-circle-play mr-3 play"></i>
+                <i class="fa-solid fa-circle-play mr-3 play" onclick="playButton(this)"></i>
                 <i class="fa-solid fa-forward-step footer-icon2 mr-3"></i>
                 <i class="fa-solid fa-repeat footer-icon1"></i>
 
@@ -733,6 +723,20 @@
             <div class="volume"></div>
         </div>
     </footer>
+
+    <script>
+
+        function playButton(x) {
+            x.classList.toggle("fa-circle-stop");
+        }
+
+
+        function likeButton(x) {
+            x.classList.toggle("text-success");
+        }
+
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
