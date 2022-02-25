@@ -21,6 +21,7 @@
 
 <body>
     <main class="d-flex">
+
         <!-- left sidebar -->
         <div class="container left-sidebar">
             <div class="sidebar-top py-3">
@@ -109,15 +110,15 @@
                 <div class="container-fluid artist-page-bottom d-flex flex-column py-4 px-4">
                     <div class="d-flex align-items-center">
                         <i class="fa-solid fa-pause d-flex align-items-center
-                        justify-content-center"></i>
-                        <button type="button" class="btn btn-dark d-inline-block d-flex align-items-center
+                        justify-content-center" id="bigPlayButton"></i>
+                        <button type="button" id="followButton" class="btn btn-dark d-inline-block d-flex align-items-center
                         justify-content-center mx-4">FOLLOW</button>
                         <h6 class="d-inline-block align-self-center">. . .</h6>
                     </div>
                     <div class="row py-3">
                         <div class="col-12 col-md-12 col-lg-9 artist-page-bottom-left">
                             <h5 class="pb-1">Popular</h5>
-                            <table class="table table-dark mb-2">
+                            <table class="table table-dark mb-2 popular">
                                 <tbody>
                                     <tr class="py-2">
                                         <th scope="row" class="py-1"><svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -127,37 +128,37 @@
                                                     d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" />
                                             </svg></th>
                                         <td class="py-2"><img src="queen-album1.jpeg" alt="album1 image"></td>
-                                        <td class="pl-0 py-2">Another One Bites The Dust - Remastered 2011</td>
+                                        <td class="pl-0 py-2 track-1">Another One Bites The Dust - Remastered 2011</td>
                                         <td class="py-2">1,000,334,567</td>
-                                        <td class="py-2">3:34</td>
+                                        <td class="py-2 pr-2">3:34</td>
                                     </tr>
                                     <tr class="py-2">
                                         <th scope="row" class="py-2">2</th>
                                         <td class="py-2"><img src="queen-album2.jpeg" alt="album2 image"></td>
                                         <td class="pl-0 py-2">Bohemian Rhapsody - Remastered 2011</td>
                                         <td class="py-2">1,496,334,567</td>
-                                        <td class="py-2">5:54</td>
+                                        <td class="py-2 pr-2">5:54</td>
                                     </tr>
                                     <tr class="py-2">
                                         <th scope="row" class="py-2">3</th>
                                         <td class="py-2"><img src="queen-album3.jpeg" alt="album3 image"></td>
                                         <td class="pl-0 py-2">Don't Stop Me Now - Remastered 2011</td>
                                         <td class="py-2">1,430,334,567</td>
-                                        <td class="py-2">3:29</td>
+                                        <td class="py-2 pr-2">3:29</td>
                                     </tr>
                                     <tr class="py-2">
                                         <th scope="row" class="py-2">4</th>
                                         <td class="py-2"><img src="queen-album4.jpeg" alt="album4 image"></td>
                                         <td class="pl-0 py-2">Under Pressure - Remastered 2011</td>
                                         <td class="py-2">900,334,242</td>
-                                        <td class="py-2">4:08</td>
+                                        <td class="py-2 pr-2">4:08</td>
                                     </tr>
                                     <tr class="py-2">
                                         <th scope="row" class="py-2">5</th>
                                         <td class="py-2"><img src="queen-album5.jpeg" alt="album5 image"></td>
                                         <td class="pl-0 py-2">We Will Rock You - Remastered</td>
                                         <td class="py-2">9,000,334</td>
-                                        <td class="py-2">3:34</td>
+                                        <td class="py-2 pr-2">3:34</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -183,47 +184,42 @@
                     <div class="row py-3">
                         <div class="col-12 col-md-12 col-lg-9 artist-page-bottom-left">
                             <h5 class="pb-1">Popular Releases</h5>
-                            <table class="table table-dark mb-2">
+                            <table class="table table-dark mb-2 popular-releases">
                                 <tbody>
                                     <tr class="py-2">
-                                        <th scope="row" class="py-1"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" fill="currentColor" class="bi bi-activity"
-                                                viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" />
-                                            </svg></th>
+                                        <th scope="row" class="py-1"></th>
                                         <td class="py-2"><img src="queen-album1.jpeg" alt="album1 image"></td>
-                                        <td class="pl-0 py-2">Another One Bites The Dust - Remastered 2011</td>
+                                        <td class="pl-0 py-2 track-1">Another One Bites The Dust - Remastered 2011</td>
                                         <td class="py-2">1,000,334,567</td>
-                                        <td class="py-2">3:34</td>
+                                        <td class="py-2 pr-2">3:34</td>
                                     </tr>
                                     <tr class="py-2">
-                                        <th scope="row" class="py-2">2</th>
+                                        <th scope="row" class="py-2"></th>
                                         <td class="py-2"><img src="queen-album2.jpeg" alt="album2 image"></td>
                                         <td class="pl-0 py-2">Bohemian Rhapsody - Remastered 2011</td>
                                         <td class="py-2">1,496,334,567</td>
-                                        <td class="py-2">5:54</td>
+                                        <td class="py-2 pr-2">5:54</td>
                                     </tr>
                                     <tr class="py-2">
-                                        <th scope="row" class="py-2">3</th>
+                                        <th scope="row" class="py-2"></th>
                                         <td class="py-2"><img src="queen-album3.jpeg" alt="album3 image"></td>
                                         <td class="pl-0 py-2">Don't Stop Me Now - Remastered 2011</td>
                                         <td class="py-2">1,430,334,567</td>
-                                        <td class="py-2">3:29</td>
+                                        <td class="py-2 pr-2">3:29</td>
                                     </tr>
                                     <tr class="py-2">
-                                        <th scope="row" class="py-2">4</th>
+                                        <th scope="row" class="py-2"></th>
                                         <td class="py-2"><img src="queen-album4.jpeg" alt="album4 image"></td>
                                         <td class="pl-0 py-2">Under Pressure - Remastered 2011</td>
                                         <td class="py-2">900,334,242</td>
-                                        <td class="py-2">4:08</td>
+                                        <td class="py-2 pr-2">4:08</td>
                                     </tr>
                                     <tr class="py-2">
-                                        <th scope="row" class="py-2">5</th>
+                                        <th scope="row" class="py-2"></th>
                                         <td class="py-2"><img src="queen-album5.jpeg" alt="album5 image"></td>
                                         <td class="pl-0 py-2">We Will Rock You - Remastered</td>
                                         <td class="py-2">9,000,334</td>
-                                        <td class="py-2">3:34</td>
+                                        <td class="py-2 pr-2">3:34</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -245,7 +241,7 @@
                 <h6 class="footer-text">Another One Bites The Dust - Remastered 2011</h6>
                 <p>Artist</p>
             </div>
-            <div class="heart-grid-icon"><i class="fa-solid fa-heart mr-3 footer-icon1"></i>
+            <div class="heart-grid-icon"><i class="fa-solid fa-heart mr-3 footer-icon1" id="likeButton"></i>
                 <i class="fa-solid fa-table-cells-large footer-icon1"></i>
             </div>
         </div>
@@ -253,7 +249,7 @@
             <div class="d.flex icons align-items-center justify-content-center">
                 <i class="fa-solid fa-shuffle footer-icon1 mr-3"></i>
                 <i class="fa-solid fa-backward-step footer-icon2 mr-3"></i>
-                <i class="fa-solid fa-circle-pause mr-3 play"></i>
+                <i class="fa-solid fa-circle-pause mr-3 play" id="playButton"></i>
                 <i class="fa-solid fa-forward-step footer-icon2 mr-3"></i>
                 <i class="fa-solid fa-repeat footer-icon1"></i>
 
@@ -274,6 +270,10 @@
         </div>
     </footer>
 
+    <div class="alert alert-primary" role="alert" id="alert-follow">
+        A simple primary alert—check it out!
+    </div>
+
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -290,6 +290,38 @@
     -->
     <script src="https://kit.fontawesome.com/f62e77e0f6.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ae2c658fe7.js" crossorigin="anonymous"></script>
+    <script>
+        let followButton = document.querySelector('#followButton')
+        followButton.addEventListener('click', function ()
+        {
+            if (followButton.innerText === 'FOLLOW')
+            {
+                followButton.innerText = 'FOLLOWING'
+            } else
+            {
+                followButton.innerText = 'FOLLOW'
+            }
+        })
+
+        let bigPlayButton = document.querySelector('#bigPlayButton')
+        bigPlayButton.addEventListener('click', function ()
+        {
+            bigPlayButton.classList.toggle("fa-play");
+        })
+
+        let playButton = document.querySelector('#playButton')
+        playButton.addEventListener('click', function ()
+        {
+            playButton.classList.toggle("fa-circle-play");
+        })
+
+        let likeButton = document.querySelector('#likeButton')
+        likeButton.addEventListener('click', function ()
+        {
+            likeButton.classList.toggle("text-success");
+        })
+
+    </script>
 </body>
 
 </html>
