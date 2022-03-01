@@ -749,45 +749,7 @@
             x.classList.toggle("text-success");
         }
 
-        // exercise for M3D2
-        let newDiv = document.querySelector('#fetched-lists')
-        // window.onload = () =>
-        // {
-        //     generateLists()
-        // }
-        function generateLists()
-        {
-            fetch('https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem')
-                .then(response =>
-                {
-                    console.log(response.status)
-                    return response.json()
-                })
-                .then(lists =>
-                {
-                    console.log(lists)
-                    for (const list of lists.data)
-                    {
-                        newDiv.innerHTML += `
-                        <div class="col-6">
-                          <div class="card">
-                            <img src="${list.album.cover}" class="card-img-top" alt="album.jpg">
-                            <div class="card-body">
-                              <h5 class="card-title">${list.title_short}</h5>
-                              <p class="card-text">${list.artist.name}</p>
-                            </div>
-                          </div>
-                        </div>
-                        `
-                    }
-                })
-                .catch(error =>
-                {
-                    console.error(error)
-                })
-            //test
 
-        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
