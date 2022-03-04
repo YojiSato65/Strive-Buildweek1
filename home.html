@@ -21,6 +21,11 @@
 
         }
 
+        main {
+            min-height: 90vh;
+        }
+
+
         .left-sidebar {
             background-color: black;
             width: 15vw;
@@ -38,7 +43,7 @@
         }
 
         .left-sidebar div {
-            color: var(--text-dark);
+            pp color: var(--text-dark);
             font-size: 0.7rem;
         }
 
@@ -55,7 +60,6 @@
             font-weight: 600;
         }
 
-        /* sometjh */
         .left-sidebar i {
             font-size: 1rem;
         }
@@ -91,6 +95,11 @@
 
         .card {
             transition: all .2s ease-in-out;
+
+        }
+
+        .second-card-row {
+            max-width: 150px;
         }
 
         .card:hover {
@@ -390,121 +399,12 @@
                 </div>
 
             </div>
-            <h3 class="mt-5 mb-4">Good Morning</h3>
-            <div class="row ">
-                <div class="col">
-                    <div class="card mb-3 card1 d-flex flex-row">
-                        <div class="d-inline">
-                            <img src="./album-img/queen-album1.jpeg" alt="album1.jpg" id="img5" />
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Jazz-Rock</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 card1 d-flex flex-row">
-                        <div class="d-inline">
-                            <img src="./album-img/queen-album2.jpeg" alt="album1.jpg" id="img5" />
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Songs</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 card1 d-flex flex-row">
-                        <div class="d-inline">
-                            <img src="./album-img/queen-album3.jpeg" alt="album1.jpg" id="img5" />
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Metal Ballads</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 card1 d-flex flex-row">
-                        <div class="d-inline">
-                            <img src="./album-img/queen-album4.jpeg" alt="album1.jpg" id="img5" />
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">POST HUMAN:</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 card1 d-flex flex-row">
-                        <div class="d-inline">
-                            <img src="./album-img/queen-album5.jpeg" alt="album1.jpg" id="img5" />
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">This is Joe</h5>
-                        </div>
-                    </div>
-                </div>
+            <h3 class="mt-5 mb-4">Good Morning</h3> <button class="btn btn-primary my-1 mx-auto"
+                onclick="loadMusic()">Load Albuns</button>
+            <div class="row " id="card-Wrapper">
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card mb-3 card1 d-flex flex-row">
-                        <div class="d-inline">
-                            <img src="./album-img/queen-album6.jpeg" alt="album1.jpg" id="img5" />
-                        </div>
 
-                        <div class="card-body">
-                            <h5 class="card-title">Midian</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 card1 d-flex flex-row">
-                        <div class="d-inline">
-                            <img src="./album-img/th (1).jpeg" alt="album1.jpg" id="img5" />
-                        </div>
 
-                        <div class="card-body">
-                            <h5 class="card-title">Nymphetamine</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 card1 d-flex flex-row">
-                        <div class="d-inline">
-                            <img src="./album-img/th (11).jpeg" alt="album1.jpg" id="img5" />
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">amo</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 card1 d-flex flex-row">
-                        <div class="d-inline">
-                            <img src="./album-img/th (10).jpeg" alt="album1.jpg" id="img5" />
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">LEBASK</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 card1 d-flex flex-row">
-                        <div class="d-inline">
-                            <img src="./album-img/th (12).jpeg" alt="album1.jpg" id="img5" />
-                        </div>
-
-                        <div class="card-body">
-                            <h5 class="card-title">Opeth</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="d-flex justify-content-between align-items-end">
                 <div>
@@ -514,87 +414,8 @@
                     <p class="mt-5 mb-4 see" style="vertical-align: bottom;">SEE ALL</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (13).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Burning Jazz</h5>
-                            <p class="card-text">You'll find flery,modern,groovy, jazz</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (14).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Metal Ballads</h5>
-                            <p class="card-text">A collection of the best metal ballads.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (2).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Midian</h5>
-                            <p class="card-text">Cradle of Filfh</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (3).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Liked Songs</h5>
-                            <p class="card-text">Your Favorits</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (4).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">LE BASK</h5>
-                            <p class="card-text">Artist</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (5).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">POST HUMAN</h5>
-                            <p class="card-text">Bring me the Horizon</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (6).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">This is Joe </h5>
-                            <p class="card-text">This is Joe Bonamassa</p>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col">
-                    <div class="card">
-                        <img src="./album-img/queen-album1.jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Queen</h5>
-                            <p class="card-text">Best of Queen</p>
-
-                        </div>
-                    </div>
-                </div> -->
+            <button class="btn btn-primary my-1 mx-auto" onclick="loadMusic2()">Load Albuns</button>
+            <div class="row" id="secondCard-wrapper">
             </div>
             <div class="d-flex justify-content-between align-items-end">
                 <div class="mt-5">
@@ -605,101 +426,13 @@
                     <p class="mt-5 mb-4 see" style="vertical-align: bottom;">SEE ALL</p>
                 </div>
             </div>
+            <button class="btn btn-primary my-1 mx-auto" onclick="loadMusic3()">Load Albuns</button>
+            <div class="row" id="secondCard-wrapper">
 
+                <div class="row" id="thirdRow-wrapper">
 
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (13).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Podcast</h5>
-                            <p class="card-text">Best Podcast</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (2).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Demoni Urbani</h5>
-                            <p class="card-text">Little text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (5).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Daily Cogito</h5>
-                            <p class="card-text">Code</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (7).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Ladies that UX</h5>
-                            <p class="card-text">UX/UI</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/queen-album3.jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Mindfulness</h5>
-                            <p class="card-text">Spotify Studios</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/th (14).jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Respondendo em voz alta</h5>
-                            <p class="card-text">Laurinha Lero</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./album-img/album1.jpg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Widder</h5>
-                            <p class="card-text">Dein Tag</p>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col mb-5">
-                    <div class="card">
-                        <img src="./album-img/queen-album3.jpeg" class="card-img-top" alt="album1.jpg">
-                        <div class="card-body">
-                            <h5 class="card-title">Power Pizza</h5>
-                            <p class="card-text">Little text</p>
-
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="d-flex justify-content-between align-items-end">
-                <div id="fetched-lists" class="mt-5">
-                    <h3>Fetched lists</h3>
-                    <button type="button" class="btn btn-dark" onclick="generateLists()">List Albums</button>
-                    <!-- <ul class="fetched-ul">
-                        <li></li>
-                    </ul> -->
                 </div>
             </div>
-        </div>
-        </div>
     </main>
     <footer class="footer mt-auto py-3 d-flex justify-content-between align-items-center">
         <div class="left-div ml-5 d-flex align-items-center">
@@ -736,20 +469,109 @@
         </div>
     </footer>
 
+
+
     <script>
 
-        function playButton(x)
-        {
+        function playButton(x) {
             x.classList.toggle("fa-circle-stop");
         }
 
 
-        function likeButton(x)
-        {
+        function likeButton(x) {
             x.classList.toggle("text-success");
         }
 
+        const cardWrapper = document.querySelector("#card-Wrapper")
+        function loadMusic() {
+            fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem")
+                .then(response => {
+                    return response.json()
+                })
+                .then(musics => {
+                    console.log(musics)
+                    console.log(musics.data)
+                    cardWrapper.innerHTML = musics.data
+                        .map(
+                            (music) =>
+                                `   <div class="col">
+                    <div class="card second-card-row">
+                        <a href="./albumpage.html?id=${music.album.id}"><img src=${music.album.cover} alt="album1.jpg" 
+                        <div class="card-body">
+                            <h5 class="card-title">${music.album.title}</h5>
+                            <p class="card-text">${music.title}z</p>
 
+                        </div>
+                    </div>
+                </div>
+                   `
+                        )
+                        .join("")
+                })
+                .catch(error => {
+                    console.error(error)
+                })
+        }
+        const secondCardWrapper = document.querySelector("#secondCard-wrapper")
+        function loadMusic2() {
+            fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=metallica")
+                .then(response => {
+                    return response.json()
+                })
+                .then(musics => {
+                    console.log(musics)
+                    console.log(musics.data)
+                    secondCardWrapper.innerHTML = musics.data
+                        .map(
+                            (music) =>
+                                `   <div class="col">
+                    <div class="card second-card-row">
+                        <a href="./albumpage.html?id=${music.album.id}"><img src=${music.album.cover} alt="album1.jpg" 
+                        <div class="card-body">
+                            <h5 class="card-title">${music.album.title}</h5>
+                            <p class="card-text">${music.title}z</p>
+
+                        </div>
+                    </div>
+                </div>
+                   `
+                        )
+                        .join("")
+                })
+                .catch(error => {
+                    console.error(error)
+                })
+        }
+        const thirdCardWrapper = document.querySelector("#thirdRow-wrapper")
+        function loadMusic3() {
+            fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=behemoth")
+                .then(response => {
+                    return response.json()
+                })
+                .then((musics) => {
+                    console.log(musics)
+                    console.log(musics.data)
+                    thirdCardWrapper.innerHTML = musics.data
+                        .map(
+                            (music) =>
+                                `   <div class="col">
+                    <div class="card second-card-row">
+                        <a href="./albumpage.html?id=${music.album.id}"><img src=${music.album.cover} alt="album1.jpg" 
+                        <div class="card-body">
+                            <h5 class="card-title">${music.album.title}</h5>
+                            <p class="card-text">${music.title}z</p>
+
+                        </div>
+                    </div>
+                </div>
+                   `
+                        )
+                        .join("")
+                })
+                .catch(error => {
+                    console.error(error)
+                })
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
