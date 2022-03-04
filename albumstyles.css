@@ -270,10 +270,11 @@ td {
   transform: scale(1.0);
 } 
 
-#album-section > .container-fluid > .row > .col-4{
 
-}
-
+.th-style {
+  min-width: 300px;
+ }
+   
 
 
 
@@ -430,9 +431,5 @@ td {
 }
 
 
-.th-style {
-  display: flex;
-  justify-content: space-between;
-}
-  
+
   

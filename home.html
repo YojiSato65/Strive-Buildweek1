@@ -388,6 +388,7 @@
             <div class="d-flex justify-content-between header">
                 <div class="icon"> <i class="fa-solid fa-circle-chevron-left mr-3 mt-3"></i><i
                         class="fa-solid fa-circle-chevron-right"></i></div>
+                        <input id="input" type="text" style="color:black;">
                 <div class="drop mt-3">
                     <div class="button d-flex align-items-center">
                         <div class=" mr-1">
@@ -481,6 +482,31 @@
         function likeButton(x) {
             x.classList.toggle("text-success");
         }
+
+
+       /* const inputvalue = document.getElementById("input")
+        let id = inputvalue.value
+        function loadSong() {
+            fetch ("https://striveschool-api.herokuapp.com/api/deezer/artist/"+id)
+            .then(response => {
+                    return response.json()
+                })
+
+                .then ((data) =>{
+                    if (inputvalue.length > 3) {
+                                const result = data.filter(value => value.title.includes(inputvalue));
+                                console.log(result)
+                                loadMusic(result)
+                            }
+
+                        })
+
+                })
+        }
+*/
+
+
+
 
         const cardWrapper = document.querySelector("#card-Wrapper")
         function loadMusic() {

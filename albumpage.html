@@ -345,7 +345,7 @@
           </div>
 
           <div class="container-fluid" id="table-container">
-            <table class="table table-dark table-borderless table-style">
+            <table  class="table table-dark table-borderless table-style">
               <thead>
                 <tr>
                   <th scope="col" style="width: 3%" class="text-muted">#</th>
@@ -361,10 +361,13 @@
                   </th>
                 </tr>
               </thead>
-              <tbody id="table">
+           <tbody id="table">
 
 
-              </tbody>
+           </tbody>
+
+
+             
             </table>
           </div>
         </section>
@@ -467,7 +470,8 @@
           th.innerText = i + 1
           td.innerText = data.tracks.data[i].title
           tdDuration.innerText = data.tracks.data[i].duration
-          tr.classList.add("th-style")
+          th.scope=`row`
+          th.classList.add("th-style")
           table.appendChild(tr)
           tr.appendChild(th)
           th.appendChild(td)
