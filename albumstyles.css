@@ -10,12 +10,10 @@ body > .container-fluid {
   color: rgba(255, 255, 255, 0.842) !important;
 }
 
-.albumTextContainer strong{
+.albumTextContainer {
   min-width: 100px;
 
-  text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
+ 
 
 } 
 .arrowsAndDropdown {
@@ -432,6 +430,9 @@ td {
 }
 
 
-
+.th-style {
+  display: flex;
+  justify-content: space-between;
+}
   
   

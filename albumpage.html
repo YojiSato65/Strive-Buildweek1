@@ -292,126 +292,135 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex">
-              <div class="row" id="image-align">
-                <div class="col-4 col-sm-4 col-lg-3 col-xl-3" id="divImg">
+            <div id="containerClick" class="mt-5 d-flex albumTextContainer justify-content-between">
 
-                </div>
-                <div class="albumTextContainer col-8 col-sm-8 col-lg-9 col-xl-9">
-                  <p class="display-7 d-flex " id="textW">
-                    <small style="font-weight: bold;">ALBUM</small>
-                    <strong id="fontfirst" class="align-self-center" style="font-size: 30px;">Bohemian Rhapsody(The
-                      Original Soundtrack)</strong>
+              <div id="divImg" class="ml-5 ml-5">
 
-                    <small style="font-size: 15px">
-                      <strong>Queen &#8226</strong> 2018 &#8226; 22 songs, 1 hr 19mins</small>
-                  </p>
-                </div>
               </div>
+              <div class="albumTitle">
+                <div id="albumTitleDiv"></div>
+                <div class="d-flex">
+
+                  <div>
+                    <div id="artist-name"></div>
+                    <a id="click">click here</a>
+                  </div>
+                  <div class='mx-3' id="release-date"></div>
+                  <div id="nb-tracks">
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+
             </div>
           </div>
-      </div>
-      </section>
+        </section>
 
 
-      <section id="table-section">
-        <div id="color1">
-          <div class="buttonBox">
-            <button class="button play " style="display: inline"></button>
+        <section id="table-section">
+          <div id="color1">
+            <div class="buttonBox">
+              <button class="button play " style="display: inline"></button>
+            </div>
+            <div id="heart2">
+              <i class="bi-bi bi-heart"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" color="white"
+                class="bi bi-heart" viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+              </svg>
+            </div>
+            <div id="heart2">
+              <i class="bi-bi bi-three-dots "></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" color="white"
+                class="bi bi-three-dots " viewBox="0 0 16 16">
+                <path
+                  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+              </svg>
+            </div>
           </div>
-          <div id="heart2">
-            <i class="bi-bi bi-heart"></i>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" color="white"
-              class="bi bi-heart" viewBox="0 0 16 16">
-              <path
-                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-            </svg>
+
+          <div class="container-fluid" id="table-container">
+            <table class="table table-dark table-borderless table-style">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 3%" class="text-muted">#</th>
+                  <th scope="col" colspan="2" class="text-muted">TITLE</th>
+                  <th scope="col">
+                    <i class="bi bi-stopwatch text-muted"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="26" fill="currentColor"
+                      class="bi-bi bi-stopwatch text-muted" viewBox="0 0 16 16">
+                      <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z" />
+                      <path
+                        d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z" />
+                    </svg>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="table">
+
+
+              </tbody>
+            </table>
           </div>
-          <div id="heart2">
-            <i class="bi-bi bi-three-dots "></i>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" color="white"
-              class="bi bi-three-dots " viewBox="0 0 16 16">
-              <path
-                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-            </svg>
+        </section>
+
+      </div>
+
+    </div>
+
+    <footer class="footer mt-auto py-3 d-flex justify-content-between align-items-center">
+      <div class="left-div ml-5 d-flex align-items-center">
+        <div class="img-footer mr-2"> <img src="./asset/Nutty-O album art.jpg" alt="" style="height: 65px;"></div>
+        <div class="text-footer mr-5 ">
+          <h6>Music Playing <br> Artist</h6>
+        </div>
+        <div><i class="fa-solid fa-heart mr-3 footer-icon1" id="heart" onclick="likeButton(this)"></i>
+          <i class="fa-solid fa-table-cells-large footer-icon1"></i>
+        </div>
+      </div>
+      <div class="middle-div text-center">
+        <div class="d.flex icons align-items-center justify-content-center">
+          <i class="fa-solid fa-shuffle footer-icon1 mr-3"></i>
+          <i class="fa-solid fa-backward-step footer-icon2 mr-3"></i>
+          <i class="fa-solid fa-circle-play mr-3 play" onclick="playButton(this)"></i>
+          <i class="fa-solid fa-forward-step footer-icon2 mr-3"></i>
+          <i class="fa-solid fa-repeat footer-icon1"></i>
+
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="number-play mr-2">0:12</div>
+          <div class="footer-play-bar">
+            <div class="footer-stop"></div>
           </div>
+          <div class="number-play ml-2">3:34</div>
         </div>
-
-        <div class="container-fluid" id="table-container">
-          <table class="table table-dark table-borderless">
-            <thead>
-              <tr>
-                <th scope="col" style="width: 3%" class="text-muted">#</th>
-                <th scope="col" colspan="2" class="text-muted">TITLE</th>
-                <th scope="col">
-                  <i class="bi bi-stopwatch text-muted"></i>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="26" fill="currentColor"
-                    class="bi-bi bi-stopwatch text-muted" viewBox="0 0 16 16">
-                    <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z" />
-                    <path
-                      d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z" />
-                  </svg>
-                </th>
-              </tr>
-            </thead>
-            <tbody id="table">
-
-
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-    </div>
-
-  </div>
-
-  <footer class="footer mt-auto py-3 d-flex justify-content-between align-items-center">
-    <div class="left-div ml-5 d-flex align-items-center">
-      <div class="img-footer mr-2"> <img src="./asset/Nutty-O album art.jpg" alt="" style="height: 65px;"></div>
-      <div class="text-footer mr-5 ">
-        <h6>Music Playing <br> Artist</h6>
       </div>
-      <div><i class="fa-solid fa-heart mr-3 footer-icon1" id="heart" onclick="likeButton(this)"></i>
-        <i class="fa-solid fa-table-cells-large footer-icon1"></i>
+      <div class="right-div mr-5 d-flex align-items-center">
+        <div><i class="fa-solid fa-grip-lines mr-3 footer-icon1"></i></div>
+        <div><i class="fa-solid fa-desktop mr-3 footer-icon1"></i></div>
+        <div><i class="fa-solid fa-volume-high mr-3 footer-icon1"></i></div>
+        <div class="volume"></div>
       </div>
-    </div>
-    <div class="middle-div text-center">
-      <div class="d.flex icons align-items-center justify-content-center">
-        <i class="fa-solid fa-shuffle footer-icon1 mr-3"></i>
-        <i class="fa-solid fa-backward-step footer-icon2 mr-3"></i>
-        <i class="fa-solid fa-circle-play mr-3 play" onclick="playButton(this)"></i>
-        <i class="fa-solid fa-forward-step footer-icon2 mr-3"></i>
-        <i class="fa-solid fa-repeat footer-icon1"></i>
-
-      </div>
-      <div class="d-flex align-items-center">
-        <div class="number-play mr-2">0:12</div>
-        <div class="footer-play-bar">
-          <div class="footer-stop"></div>
-        </div>
-        <div class="number-play ml-2">3:34</div>
-      </div>
-    </div>
-    <div class="right-div mr-5 d-flex align-items-center">
-      <div><i class="fa-solid fa-grip-lines mr-3 footer-icon1"></i></div>
-      <div><i class="fa-solid fa-desktop mr-3 footer-icon1"></i></div>
-      <div><i class="fa-solid fa-volume-high mr-3 footer-icon1"></i></div>
-      <div class="volume"></div>
-    </div>
-  </footer>
+    </footer>
   </div>
 
   </div>
 
   <script>
 
-    function playButton(x) {
+    function playButton(x)
+    {
       x.classList.toggle("fa-circle-stop");
     }
 
 
-    function likeButton(x) {
+    function likeButton(x)
+    {
       x.classList.toggle("text-success");
     }
 
@@ -421,19 +430,35 @@
     console.log(id)
     const divImg = document.getElementById("divImg")
     const table = document.getElementById("table")
+    const albumTitle = document.getElementById('albumTitleDiv')
+    const artistName = document.getElementById('artist-name')
+    const releaseDate = document.getElementById('release-date')
+    const nbTracks = document.getElementById('nb-tracks')
+    const albumClickWrapper = document.getElementById('artist-name')
+    const anchor = document.getElementById('click')
     fetch("https://striveschool-api.herokuapp.com/api/deezer/album/" + id)
       .then((response) => response.json())
-      .then((data) => {
-        console.log(data.tracks.data.length)
+      .then((data) =>
+      {
+        console.log(data.artist.id)
         let divContainer = document.createElement("div")
         let img = document.createElement("img")
+
         divContainer.classList.add("divImgWrapper")
         img.classList.add("img-fluid")
         img.src = data.cover
         divImg.appendChild(divContainer)
         divContainer.appendChild(img)
+        albumTitle.innerText = data.title
+        artistName.innerText = data.artist.name
+        releaseDate.innerText = data.release_date
+        nbTracks.innerText = data.nb_tracks
+        anchor.href = `./artistPage/artistpage.html?id=${data.artist.id}`
 
-        for (i = 0; i < data.tracks.data.length; i++) {
+
+
+        for (i = 0; i < data.tracks.data.length; i++)
+        {
           let tr = document.createElement("tr")
           let th = document.createElement("th")
           let td = document.createElement("td")
@@ -442,10 +467,13 @@
           th.innerText = i + 1
           td.innerText = data.tracks.data[i].title
           tdDuration.innerText = data.tracks.data[i].duration
+          tr.classList.add("th-style")
           table.appendChild(tr)
           tr.appendChild(th)
           th.appendChild(td)
           th.appendChild(tdDuration)
+
+
 
         }
 
