@@ -101,7 +101,7 @@
                     Verified Artist
                 </div>
                 <div class="pl-4">
-                    <h1 class="mb-0">Queen</h1>
+                    <h1 class="mb-0" id="mainTitle"></h1>
                 </div>
                 <div class="pt-2 pb-4 pl-4">
                     27,311,222 monthly listeners
@@ -321,6 +321,23 @@
             likeButton.classList.toggle("text-success");
         })
 
+
+
+
+
+
+
+
+        const mainTitle = document.getElementById('mainTitle')
+        const params = new URLSearchParams(window.location.search)
+        const id = params.get("id")
+        fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/" + id)
+            .then((response) => response.json())
+            .then((data) =>
+            {
+                console.log(data)
+                mainTitle.innerText = data.name
+            })
 
     </script>
 </body>
