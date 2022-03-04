@@ -399,6 +399,11 @@ td {
       background-color: #171818;
   }
 
+  .divImgWrapper {
+    height: 300px;
+    width: 300px;
+  }
+
   .left-div,
   .middle-div {
       flex-direction: column;
